@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    /* Egenskapen box-sizinglar oss inkludere polstring og kant i et elements totale bredde og høyde. */
     box-sizing: border-box;
   }
   
@@ -55,6 +56,7 @@
     display: block;
     color: #fff;
     text-align: center;
+    /* Med linear gradient kan man også velge hvilken retning den skal gå, som for eksempel nå skrev jeg to right. */
     background: linear-gradient(to right, rgb(46, 107, 104), rgb(41, 70, 68));
     margin-top: 30px;
     text-decoration: none;
@@ -63,8 +65,11 @@
   
   .card:hover {
     transform: scale(1.05);
+    /* Box shadow gir en skygge rundt elementet sin ramme/border. */
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
   }
+
+  /* @Media er for å bruke forskjellige stiler for forskjellige medietyper/enheter. Som for eksempel: bredde og høyde på visningsporten, bredde og høyde på enheten */
   
   @media screen and (max-width: 1000px) {
     .card {
